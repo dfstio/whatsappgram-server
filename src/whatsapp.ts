@@ -72,10 +72,10 @@ function startBot(_client: any) {
 
 function telegram(message: any) {
     const sender = message.from;
-    dateLog(`Message received from ${"+" + sender.replaceAll("@c.us", "")} ${message.sender.name ? message.sender.name : ""}:`);
+    //dateLog(`Message received from ${"+" + sender.replaceAll("@c.us", "")} ${message.sender.name ? message.sender.name : ""}:`);
 
-    const msg: string = `Message received from ${"+" + sender.replaceAll("@c.us", "")} ${message.sender.name ? message.sender.name : ""}:\n`
-        + (message.type == 'chat') ? message.content : `Sent ${message.type}`;
+    const msg: string = `Message received from ${"+" + sender.replaceAll("@c.us", "")} ${message.sender.name ? message.sender.name : ""}:\n${(message.type == 'chat') ? message.content : `Sent ${message.type}`}`;
+    dateLog(msg);
     axios.post(`${TELEGRAMURL}`, { message: msg });
 
     console.log(msg);
