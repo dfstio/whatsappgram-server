@@ -17,7 +17,6 @@ and clone this repo
   sudo apt install ubuntu-desktop
   wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
   sudo dpkg -i google-chrome-stable_current_amd64.deb
-  sudo apt install ubuntu-desktop
   
   git clone https://github.com/dfstio/whatsappgram-server
 	cd whatsappgram-server
