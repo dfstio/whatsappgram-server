@@ -30,7 +30,7 @@ and clone this repo
 }
 
 
-Make sure that minanft command is executable by running from whatsappgram-server folder
+Make sure that whatsappgram command is executable by running from whatsappgram-server folder
 
 	chmod +x ./src/whatsapp.ts
 	sudo npm link
