@@ -24,8 +24,6 @@ and clone this repo
   npm install
   touch env.json
   nano env.json
-  
-  
 
   // Looks like 
 {
@@ -40,9 +38,17 @@ Make sure that minanft command is executable by running from whatsappgram-server
 
 
   ## Usage
-
-  whatsappgram
-
-  Then scan QR code with your WhatsApp
+ssh into the remote machine
+cd whatsappgram-server
+Clear whatsapp tokens:
+rm -r tokens
+start tmux by typing tmux into the shell:
+tmux
+start the process you want inside the started tmux session:
+whatsappgram
+Then scan QR code with your WhatsApp
+leave/detach the tmux session by typing Ctrl+b and then d
+Close terminal window:
+exit
 
 
