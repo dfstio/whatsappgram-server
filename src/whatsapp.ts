@@ -4,7 +4,7 @@ import axios from 'axios';
 
 import { TELEGRAMURL } from "../env.json";
 
-const TEN_MIN = 600000;
+const DELAY = 60 * 60 * 1000; //one hour
 let client: any = null;
 
 const options = {
@@ -66,7 +66,7 @@ function startBot(_client: any) {
 
         //	init bot again
         initBot()
-    }, TEN_MIN)
+    }, DELAY)
 
     client.onMessage(telegram)
 }
