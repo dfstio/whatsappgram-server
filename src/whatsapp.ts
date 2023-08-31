@@ -4,7 +4,7 @@ import axios from 'axios';
 
 import { TELEGRAMURL } from "../env.json";
 
-const DELAY = 60 * 60 * 1000; //one hour
+const DELAY = 24 * 60 * 60 * 1000; //one day
 let client: any = null;
 
 const options = {
