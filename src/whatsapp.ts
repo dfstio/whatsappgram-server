@@ -10,6 +10,7 @@ let client: any = null;
 const options = {
     session: "session1",
     autoClose: 0,
+    headless: 'old',
     browserArgs: [
         '--disable-web-security',
         '--no-sandbox',
